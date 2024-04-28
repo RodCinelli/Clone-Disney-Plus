@@ -3,6 +3,7 @@
 @use 'shows';
 @use 'plans';
 @use 'available-devices';
+@use 'faq';
 
 @font-face {
     font-family: Avenir;
@@ -50,9 +51,18 @@ body {
     @include text(12px);
 }
 
+.text--subItem {
+    list-style-type: disc;
+
+    li {
+        padding-top: 20px;
+        margin-left: 40px;
+    }
+}
+
 .link-text {
     @include text(18px);
-    color: variaveis.$corTextoSecundario; 
+    color: variaveis.$corTextoSecundario;
     text-decoration: underline;
 }
 
@@ -66,6 +76,11 @@ body {
 
 .title--small {
     @include title(28px);
+}
+
+p {
+    padding-top: 24px;
+    text-align: left;
 }
 
 .button {
