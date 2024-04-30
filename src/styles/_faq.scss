@@ -6,6 +6,17 @@
         margin-bottom: 24px;
     }
 
+    .mobile-break {
+        display: inline; /* Por padrão, o texto continua na mesma linha */
+    }
+    
+    @media (max-width: 767px) {
+        .mobile-break {
+            display: block; /* Cria uma quebra de linha nos dispositivos móveis */
+        }
+    }
+    
+
     &__questions {
         &__item {
             background-color: #13151d;
@@ -19,6 +30,10 @@
                 cursor: pointer;
                 position: relative;
 
+                @media (max-width: 768px) {
+                    font-size: 17px;
+                }
+
                 &::after {
                     content: '+';
                     position: absolute;
@@ -28,6 +43,10 @@
                     display: flex;
                     align-items: center;
                     font-size: 40px;
+
+                    @media (max-width: 768px) {
+                        font-size: 20px;
+                    }
                 }
             }
 
@@ -42,6 +61,10 @@
                 .faq__questions__item__question::after {
                     content: '-';
                     font-size: 80px;  /* Aumenta o tamanho da fonte do sinal de menos */
+
+                    @media (max-width: 768px) {
+                        font-size: 30px;
+                    }
                 }
 
                 .faq__questions__item__answer {

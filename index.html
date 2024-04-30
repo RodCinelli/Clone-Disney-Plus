@@ -173,7 +173,10 @@
         </div>
     </section>
     <section class="image-text-section image-text-section--image-full-width">
-        <img src="./dist/images/fundo_rei_leao.png" alt="Rei Leão">
+        <picture>
+            <source media="(max-width: 768px)" srcset="./dist/images/fundo_rei_leao_celular.png" />
+            <img src="./dist/images/fundo_rei_leao.png" alt="Rei Leão">
+        </picture>
         <div class="image-text-section__text_container image-text-section--image-full-width__text_container">
             <h2 class="title">Baixe filmes e séries</h2>
             <p class="text--big">
@@ -253,8 +256,8 @@
             </li>
             <li class="faq__questions__item">
                 <div class="faq__questions__item__question" data-faq-question>
-                    Já tem o Disney+ ou o Star+ e quer o Combo+?
-                </div>
+                    Já tem o Disney+ ou o Star+ e quer <span class="mobile-break">o Combo+?</span>
+                </div>                
                 <div class="faq__questions__item__answer text">
                     Ao assinar o Combo+:
                     <ul class="faq__questions__item__answer text text--subItem">
