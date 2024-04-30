@@ -42,6 +42,20 @@
 
             img {
                 height: 83px;
+
+                @media (max-width: 768px) {
+                    display: block;
+                    text-align: center; /* Centraliza o texto ou inline-elements */
+                    margin: 0 auto; /* Centraliza elementos de bloco com largura definida */
+                    width: 100%; /* Exemplo de largura definida */
+                }
+
+                @media (max-width: 767px) {
+                    display: block;
+                    text-align: center; /* Centraliza o texto ou inline-elements */
+                    margin: 0 auto; /* Centraliza elementos de bloco com largura definida */
+                    width: 100%; /* Exemplo de largura definida */
+                }
             }
 
             strong {
