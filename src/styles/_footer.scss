@@ -37,6 +37,16 @@
         }
     }
 
+    .github-link {
+        color: variaveis.$corTextoPrincipal;  // Define a cor inicial do link
+        transition: color 0.3s ease;  // Suaviza a transição de cor
+
+        &:hover {
+            color: variaveis.$corTextoSecundario;  // Muda a cor no hover
+            text-decoration: underline;  // Adiciona sublinhado ao passar o mouse
+        }
+    }
+
     p {
         margin-bottom: 16px;
     }
