@@ -8,11 +8,20 @@
     background-size: cover;
 
     @media (max-width: 768px) {
-        background-image: url(/src/images/hero_celular.jpeg);
+        background-image: url(/src/images/hero_tablet.jpg);
         padding-top: calc(50vw + 25px);
         background-size: contain;
         background-repeat: no-repeat;
-        margin-top: -55px;
+        margin-top: -56px;
+    }
+
+    /* Estilos para dispositivos com telas menores que 768px */
+        @media (max-width: 767px) {
+        background-image: url(/src/images/hero_celular.jpeg);
+        padding-top: calc(60vw + 20px);
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-top: -56px;
     }
 
     .button {
